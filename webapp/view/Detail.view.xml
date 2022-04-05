@@ -3,11 +3,14 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
 >
     <Shell id="shell">
         <App id="appDetail">
             <pages>
-                <Page id="page" title="{i18n>Product Detail}" showHeader="true" showNavButton="true" navButtonPress="onPressNavBack">
+                <Page id="page" title="{i18n>title}" showHeader="true" showNavButton="true" navButtonPress="onPressNavBack">
                     <content>
                         <f:SimpleForm id="SimpleFormChange354wideDual"
                             editable="true"
@@ -27,7 +30,7 @@
                             columnsM="1"
                             singleContainerFullSize="false" >
                             <f:content>
-                                <core:Title id="title" text="Office" />
+                                <core:Title text="Product Detail" id="Office" />
                                 <Label id="1" text="Full name of the contact" />
                                 <Input id="name" value="{SupplierName}" />
                                 <Label id="2"text="Street and number where the contact is located" />
@@ -59,7 +62,7 @@
                                         <Label id="is" text="Twitter account of the contact" />
                                         <Input id="is2" value="Twitter}" />
                             </f:content>
-                        </f:SimpleForm>         
+                        </f:SimpleForm>       
                     </content>
                 </Page>
             </pages>
