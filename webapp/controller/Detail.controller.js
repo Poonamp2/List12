@@ -20,6 +20,7 @@ sap.ui.define([
                     var productId = oEvent.getParameter("arguments"). ProductId;
                     this.doOperation(productId);
                 },
+                //----------------------
                 doOperation(productId){
                     var that = this;
                     var mProductModel = that.getOwnerComponent().getModel("mProducts");

@@ -10,7 +10,7 @@
     <Shell id="shell">
         <App id="appDetail">
             <pages>
-                <Page id="page" title="{i18n>title}" showHeader="true" showNavButton="true" navButtonPress="onPressNavBack">
+                <Page id="page" title="{i18n>title}"showHeader="true" showNavButton="true" navButtonPress="onPressNavBack" >
                     <content>
                         <f:SimpleForm id="SimpleFormChange354wideDual"
                             editable="true"
@@ -34,8 +34,7 @@
                                 <Label id="1" text="Full name of the contact" />
                                 <Input id="name" value="{SupplierName}" />
                                 <Label id="2"text="Street and number where the contact is located" />
-                                <Input id="11"value="{Street}">
-                                </Input>
+                                <Input id="11"value="{Street}"/>        
                                 <Input id="id1"value="{HouseNumber}">
                                     <layoutData>
                                         <l:GridData id="grid" span="XL2 L1 M3 S4" />
