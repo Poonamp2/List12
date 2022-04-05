@@ -1,0 +1,68 @@
+<mvc:View
+    controllerName="list2.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="appDetail">
+            <pages>
+                <Page id="page" title="{i18n>Product Detail}" showHeader="true" showNavButton="true" navButtonPress="onPressNavBack">
+                    <content>
+                        <f:SimpleForm id="SimpleFormChange354wideDual"
+                            editable="true"
+                            layout="ResponsiveGridLayout"
+                            title="Address"
+                            labelSpanXL="4"
+                            labelSpanL="3"
+                            labelSpanM="4"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="0"
+                            emptySpanL="4"
+                            emptySpanM="0"
+                            emptySpanS="0"
+                            columnsXL="2"
+                            columnsL="1"
+                            columnsM="1"
+                            singleContainerFullSize="false" >
+                            <f:content>
+                                <core:Title id="title" text="Office" />
+                                <Label id="1" text="Full name of the contact" />
+                                <Input id="name" value="{SupplierName}" />
+                                <Label id="2"text="Street and number where the contact is located" />
+                                <Input id="11"value="{Street}">
+                                </Input>
+                                <Input id="id1"value="{HouseNumber}">
+                                    <layoutData>
+                                        <l:GridData id="grid" span="XL2 L1 M3 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Label id="id2" text="ZIP Code and City" />
+                                <Input id="id3" value="{ZIPCode}">
+                                    <layoutData>
+                                        <l:GridData id="grid2" span="XL2 L1 M3 S4" />
+                                    </layoutData>
+                                </Input>
+                                <Input id="id4" value="{City}" />
+                                <Label id="id5" text="Country where the contact is located" />
+                                <Select id="country" selectedKey="{Country}">
+                                    <items>
+                                        <core:Item id="core" text="England" key="England"/>
+                                        <core:Item id="core2" text="Germany" key="Germany"/>
+                                        <core:Item id="core3" text="USA" key="USA"/>
+                                    </items>
+                                </Select>
+                                <core:Title id="id6" text="Online" />
+                                        <Label id="id7" text="Web page of the contact" />
+                                        <Input id="idw" value="{Url}" />
+                                        <Label id="is" text="Twitter account of the contact" />
+                                        <Input id="is2" value="Twitter}" />
+                            </f:content>
+                        </f:SimpleForm>         
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
