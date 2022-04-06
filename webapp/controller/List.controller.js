@@ -2,11 +2,13 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/Filter",
 	"sap/ui/model/FilterOperator",
+    //"list2/lib/moment.min",
+    "sap/m/MessageBox"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller,Filter, FilterOperator, JSONModel) {
+    function (Controller,Filter, FilterOperator, MessageBox) {
         "use strict";
 
         return Controller.extend("list2.controller.List", {
@@ -31,6 +33,10 @@ sap.ui.define([
                 var sSelectedProduct = oEvent.getSource().getBindingContext("mProducts").getObject();
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                 oRouter.navTo("DetailView",{ProductId: sSelectedProduct.ProductId});
+            },
+            onPressDateTime: function() {
+                var datetime = moment().format('MMMM Do YYYY, h:mm:ss a');
+                MessageBox.success(datetime);
             }
         });
     });
